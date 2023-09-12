@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap");
+body {
+  background-image: url("https://www.google.com/imgres?imgurl=https%3A%2F%2Ft3.ftcdn.net%2Fjpg%2F01%2F91%2F78%2F32%2F360_F_191783282_0TVrx5VrvrkpDHSKdjjI87HkbXJy5TMw.jpg&tbnid=o6rTNhyxaa4EgM&vet=12ahUKEwiBqdrPjKWBAxXARjABHeXLD4kQMygbegUIARC4AQ..i&imgrefurl=https%3A%2F%2Fstock.adobe.com%2Fsearch%3Fk%3Dblue%2Bbackground&docid=MbaE5T0MNR28QM&w=540&h=360&q=background%20images&ved=2ahUKEwiBqdrPjKWBAxXARjABHeXLD4kQMygbegUIARC4AQ");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Montserrat";
+}
+
+.main {
+  max-width: 960px;
+  margin: 0px auto;
+  padding: 0px 15px;
+  min-height: 100vh;
+}
+
+.header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0px;
+}
+
+.notes__title {
+  color: #8e3535;
+  font-size: 38px;
+  font-family: "Montserrat";
+  font-weight: 400;
+}
+
+.notes {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(3, minmax(300px, 1fr));
+}
+
+@media screen and (max-width: 900px) {
+  .notes {
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .notes {
+    grid-template-columns: repeat(1, minmax(300px, 1fr));
+  }
+}
